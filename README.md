@@ -3,7 +3,7 @@
 </div>
 
 [![Build Status](https://travis-ci.org/abouthiroppy/honyaku.svg?branch=master)](https://travis-ci.org/abouthiroppy/honyaku)
-<!-- npm version badge: https://badge.fury.io/ -->
+[![npm version](https://badge.fury.io/js/honyaku.svg)](https://badge.fury.io/js/honyaku)
 
 ## Install
 ```
