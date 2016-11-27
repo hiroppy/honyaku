@@ -1,0 +1,51 @@
+{
+  "name": "honyaku",
+  "main": "bin/index.js",
+  "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Translate japanese to english or english to japanese.",
+  "files": [
+    "bin"
+  ],
+  "keywords": [
+    "translate",
+    "google",
+    "japanese"
+  ],
+  "homepage": "",
+  "bin": {
+    "honyaku": "bin/index.js",
+    "hyk": "bin/index.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint": "eslint .",
+    "test": "ava",
+    "test:watch": "ava -w",
+    "postcover": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-eslint": "^7.1.1",
+    "conventional-changelog-cli": "^1.2.0",
+    "eslint": "^3.11.0",
+    "eslint-config-sky": "^1.2.1",
+    "nyc": "^10.0.0",
+    "pify": "^2.3.0"
+  },
+  "dependencies": {
+    "google-translate-api": "^2.2.2"
+  }
+}
