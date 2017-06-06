@@ -2,7 +2,7 @@
 
 'use strict';
 
-const translate = require('google-translate-api');
+const translate = require('google-translate-api-extended');
 
 const commands = process.argv.slice(2);
 
